@@ -16,6 +16,7 @@ mp_face_mesh = mp.solutions.face_mesh
 
 
 def distance(point1, point2):
+    # 计算两点间距离
     dis = math.sqrt((point1[0]-point2[0])*(point1[0] - point2[0]) +
                     (point1[1]-point2[1])*(point1[1] - point2[1]))
     return dis
@@ -339,6 +340,7 @@ def test_video(video_file):
 
 
 def read_image_from_video(video_file, time):
+    # 根据时间点从视频中截取图片
     # print(time_fps)
     cap = cv2.VideoCapture(video_file)
     # fps = cap.get(cv2.CAP_PROP_FPS)
@@ -439,6 +441,7 @@ def lips_opening_distance(ldmk251):
 
 
 def read_textgrid(file):
+    # 读取.TextGrid文件
     with open(file, 'r') as f:
         data = f.readlines()
         # print data #Use this to view how the code would look like after the program has opened the files
