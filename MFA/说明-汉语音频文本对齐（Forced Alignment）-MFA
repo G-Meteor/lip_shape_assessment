@@ -3,7 +3,7 @@
 1、第一件事是把MFA安装好，https://montreal-forced-aligner.readthedocs.io/en/latest/installation.html，Mac，Linux，Windows都可以用。
 2、安装预训练模型：
 mfa model download acoustic mandarin
-若上述指令安装失败，可在与训练模型找到普通话（Mandarin），链接在这里https://montreal-forced-aligner.readthedocs.io/en/latest/user_guide/models/acoustic.html
+若上述指令安装失败，可在与训练模型找到普通话（Mandarin），链接在这里https://mfa-models.readthedocs.io/en/latest/acoustic/index.html
  
 3、安装字典：
 mfa model download dictionary mandarin
